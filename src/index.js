@@ -1,10 +1,13 @@
+// const element = document.createElement('h1');
+// element.innerText = 'Hola mundo, primer h1';
+
+// const container = document.getElementById('app');
+// container.appendChild(element)
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
 
-import './global.css';
-import App from './components/App';
-
+const element = <h1>Hola Mundo Provando React JSX</h1>
 const container = document.getElementById('app');
-
-ReactDOM.render(<App />, container);
+// ReactDOM.render(__que__, __donde__);
+ReactDOM.render(element,container);
