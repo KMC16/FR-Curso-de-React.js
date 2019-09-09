@@ -3,9 +3,9 @@
 }
 
 .BadgesListItem {
-  background: #ffffff;
+  background: #f7f7f7;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   padding: 1rem;
 }
