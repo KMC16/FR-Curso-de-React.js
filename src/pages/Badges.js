@@ -4,6 +4,8 @@ import "./Badges.css";
 import confLogo from "../images/badge-header.svg";
 import BadgesList from "../components/BadgesList";
 import API from "../API";
+import PageLoading from "../components/pageLoading";
+import PageError from "../components/PageError";
 class Badges extends React.Component {
   state = {
     loading: true,
@@ -27,7 +29,11 @@ class Badges extends React.Component {
 
   render() {
     if (this.state.loading === true) {
-      return "Loading...";
+      return <PageLoading />;
+    }
+
+    if (this.state.error) {
+      return <PageError error={this.state.error} />;
     }
     return (
       <React.Fragment>
