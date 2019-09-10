@@ -30,6 +30,7 @@ const api = {
     },
 
     create(badge) {
+      // throw new Error("505: Server error"); // Codigo error de prueba
       return callApi(`/badges`, {
         method: "POST",
         body: JSON.stringify(badge)
