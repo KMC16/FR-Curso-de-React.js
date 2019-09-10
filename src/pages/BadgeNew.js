@@ -60,7 +60,7 @@ class BadgeNew extends React.Component {
                 lastName={this.state.form.lastName || "Apellidos"}
                 twitter={this.state.form.twitter || "Twitter"}
                 email={this.state.form.email || "Email@email"}
-                jobTittle={this.state.form.jobTittle || "Profesión"}
+                jobTitle={this.state.form.jobTitle || "Profesión"}
                 avatar="https://s.gravatar.com/avatar/d3a4caa3b2a1882555c69bbd0deaa005?s=80"
               />
             </div>
